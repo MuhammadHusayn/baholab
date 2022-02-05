@@ -17,7 +17,8 @@ const frontend_criteria = [
 	"Formalarda validatsiya ishlatilishi",
 	"Ma'lumotlarning to'g'ri render bo'lishi",
 	"Loyiha arxitekturasi",
-	"Loyihaning topshiriqqa mos kelishi"
+	"Loyihaning topshiriqqa mos kelishi",
+	"Backend bilan integratsiya bo'lishi"
 ]
 
 const backend_criteria = [
