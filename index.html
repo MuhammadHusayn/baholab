@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baholab</title>
+    <link rel="stylesheet" href="./css/switch.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <header class="site_header">
+        <div class="container">
+            <a class="site_logo" href="index.html"><img class="site_logo_img" width="102" height="36" src="img/Baholab.svg" alt="logo"></a>
+            <div class="site_nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_item_link" href="#">Loyiha haqida</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_item_link" href="#">Loyiha qanday ishlaydi?</a>
+                    </li>
+                </ul>
+                <!-- <a class="header_about-site" href="">Как это работает?</a> -->
+            </div>  
+        </div>
+    </header>
+    <main class="site_main">
+        <section class="calculator">
+            <div class="container">
+                <div class="result">
+                    <!-- resultat -->
+                    <span id="sumResult" class="result_sub">∑</span>
+                    <span style="margin: 0" class="result_sup calculator_item">=</span>
+                    <span class="result_sup">
+                        Δ<span class="calculator_item_title_span" id="criteriaLength">3</span>
+                    </span>
+                    <span style="margin: 0" class="result_sup calculator_item">=</span>
+                    <span id="numbers" class="result_sup calculator_item">
+                        <img src="img/nums.svg" alt="">
+                    </span>
+
+                    <!-- <img src="img/site-hero.svg" alt=""> -->
+                </div>
+                <div class="calculator_about">
+                    <h1 class="calculator_title">Ballar usuli yordamida loyihani baholashning soddalashtirilgan formulasi:</h1>
+                    <ul class="calculator_list">
+                        <li class="calculator_item">
+                            <h2 class="calculator_item_title">∑ <span class="calculator_item_title_span">— Umumiy ball</span></h2>
+                        </li>
+                        <li class="calculator_item">
+                            <h3 class="calculator_item_title">Δ <span class="calculator_item_title_span">— Kriteriya</span></h3>
+                            <p class="calculator_item_sub_title">n – kriteriya tartibi raqami</p>
+                        </li>
+                        <li class="calculator_item">
+                            <h4 class="calculator_item_title">K <span class="calculator_item_title_span">— Koeffitsient</span></h4>
+                            <p class="calculator_item_sub_title">m – Koeffitsient tartibi raqami</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="buttons">
+            <div class="container buttons_container">
+                <div class="buttons_wrapper">
+                    <div class="button_wrapper">
+                        <p class="button_title">Birinchi</p>
+                        <p>
+                            <button id="designButton" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                                aria-expanded="false" aria-controls="collapseWidthExample">
+                                Dizayn baholash
+                                <img class="btnimg" src="img/right.svg" alt="">
+                            </button>
+                        </p>
+                        <div class="result_button1">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                <div class="card card-body">
+                                    <div class="card_title-wrapper">
+                                        <h1 class="card_title">Dizayn uchun kiritierialar</h1>
+                                        <p class="card_text">Har bir kriteria uchun ball: <span>5</span></p>
+                                    </div>
+                                    <ul id="designCardsList" class="card_list"></ul>
+                                    <a class="sum" href="">Jamini ko'rish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_wrapper">
+                        <p class="button_title">Ikkinchi</p>
+                        <p>
+                            <button id="frontendButton" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2"
+                                aria-expanded="false" aria-controls="collapseWidthExample">
+                                Frotend baholash
+                                <img class="btnimg" src="img/right.svg" alt="">
+                            </button>
+                        </p>
+                        <div class="result_button1">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                                <div class="card card-body">
+                                    <div class="card_title-wrapper">
+                                        <h1 class="card_title">Fronted uchun kiritierialar</h1>
+                                        <p class="card_text">Har bir kriteria uchun ball: <span>5</span></p>
+                                    </div>
+                                    <ul id="frontendCardsList" class="card_list"></ul>
+                                    <a class="sum" href="">Jamini ko'rish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_wrapper">
+                        <p class="button_title">Uchinchi</p>
+                        <p>
+                            <button id="backendButton" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExamplee"
+                                aria-expanded="false" aria-controls="collapseWidthExample">
+                                Backend baholash
+                                <img class="btnimg" src="img/right.svg" alt="">
+                            </button>
+                        </p>
+                        <div class="result_button1">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExamplee">
+                                <div class="card card-body">
+                                    <div class="card_title-wrapper">
+                                        <h1 class="card_title">Backend uchun kiritierialar</h1>
+                                        <p class="card_text">Har bir kriteria uchun ball: <span>5</span></p>
+                                    </div>
+                                    <ul id="backendCardsList" class="card_list"></ul>
+                                    <a class="sum" href="">Jamini ko'rish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="list_of_result" href="#">Natijalar ro'yxati</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site_footer">
+        <div class="container footer_container">
+            <p class="site_footer_copyright">Copyright 2022</p>
+
+            <!-- <div class="site_nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_item_link" href="about.html">О проекте</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_item_link" href="work.html">Как это работает?</a>
+                    </li>
+                </ul>
+            </div> -->
+
+        </div>
+    </footer>
+
+<script>
+    
+</script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
